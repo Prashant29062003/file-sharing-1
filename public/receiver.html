@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Share</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+    <script src="socket.io/socket.io.js" type="text/javascript" defer></script>
+    <script src="./receiver.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Share your files <span>securely.</span></h2>
+                <div class="form-input">
+                    <label for="join-id">Join ID</label>
+                    <input type="text" id="join-id">
+                </div>
+                <div class="form-input">
+                    <button id="receiver-start-con-btn" class="bg-white text-black py-[10px] px-5 text-[18px] font-semibold rounded-2xl border-none outline-none cursor-pointer">Connect</button>
+                </div>
+            </div>
+        </div>
+        <div class="screen fs-screen">
+            <div class="files-list">
+                <div class="title">Shared files:</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
